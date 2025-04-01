@@ -114,13 +114,15 @@ h3, h4, h5, h6 {
 .hero h1 {
     font-size: 2rem;
     margin-bottom: 15px;
-    text-shadow: 2px 2px slategray;
+    text-shadow: 2px 2px 2px lightyellow;
 }
 
 .hero p {
     font-size: 1.1rem;
     margin-bottom: 25px;
     text-shadow: 1px 1px slategray;
+    max-width: 600px;
+    margin: auto;
 }
 
 /* Homepage-specific hero styles */
@@ -542,3 +544,89 @@ section {
         width: 1170px;
     }
 }
+
+
+
+/* Wedding Stories Styles */
+.wedding-stories-container {
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #9d7a5a;
+    margin-bottom: 30px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #9d7a5a;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.intro-section {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.story-section {
+    margin-bottom: 50px;
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 30px;
+}
+
+.story-section p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.story-section a {
+    color: #9d7a5a;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.story-section a:hover {
+    color: #7d5c3c;
+    text-decoration: underline;
+}
+
+.closing-section {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .wedding-stories-container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .intro-section,
+    .story-section p,
+    .closing-section {
+        font-size: 1rem;
+    }
+}
+/* END of wedding stories styles */
